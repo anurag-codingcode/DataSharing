@@ -1,0 +1,10 @@
+<p>parent-cards works!</p>
+
+<div class="parent" >
+    <div *ngFor="let note of notes">
+    
+        <app-notes-card [data]="note" (sendDataToParent)="handleClick($event)"></app-notes-card>
+    </div>
+
+</div>
+
